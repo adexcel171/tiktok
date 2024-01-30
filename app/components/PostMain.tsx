@@ -60,12 +60,12 @@ export default function PostMain({ post }: PostMainCompTypes) {
                                 loop
                                 controls
                                 muted
-                                className="rounded-xl object-cover mx-auto h-full" 
+                                className="rounded-xl sm:w-[350px] object-cover mx-auto h-full" 
                                 src={useCreateBucketUrl(post?.video_url)}
                             />
                             <img 
                                 className="absolute right-2 bottom-10" 
-                                width="90" 
+                                width="40" 
                                 src="/images/admire.jpg"
                             />
                         </div>
