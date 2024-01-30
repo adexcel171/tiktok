@@ -48,7 +48,7 @@ export default function TopNav() {
                 <div className={`flex items-center justify-between gap-6 w-full px-4 mx-auto ${pathname === '/' ? 'max-w-[1150px]' : ''}`}>
 
                     <Link href="/">
-                        <img className="min-w-[115px] w-[115px]" src="/images/admire.jpg"/>
+                        <img className="min-w-[70px] w-[70px]" src="/images/admire.jpg"/>
                     </Link>
 
                     <div className="relative hidden md:flex items-center justify-end bg-[#F1F1F2] p-1 rounded-full max-w-[430px] w-full">

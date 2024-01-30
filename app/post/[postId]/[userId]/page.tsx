@@ -89,7 +89,7 @@ export default function Post({ params }: PostPageTypes) {
                             />
                         ) : null}
 
-                        <div className="bg-black bg-opacity-70 lg:min-w-[480px] z-10 relative">
+                        <div className="bg-black bg-opacity-70 lg:min-w-[600px] z-10 relative">
                             {postById?.video_url ? (
                                 <video 
                                     autoPlay
