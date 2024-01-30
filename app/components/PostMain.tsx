@@ -65,7 +65,7 @@ export default function PostMain({ post }: PostMainCompTypes) {
                             />
                             <img 
                                 className="absolute right-2 bottom-10" 
-                                width="40" 
+                                width="25" 
                                 src="/images/admire.jpg"
                             />
                         </div>
