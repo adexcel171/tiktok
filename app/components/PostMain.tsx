@@ -47,7 +47,7 @@ export default function PostMain({ post }: PostMainCompTypes) {
                     <p className="text-[14px] text-gray-500 pb-0.5">#fun #tech #SuperAwesome</p>
                     <p className="text-[14px] pb-0.5 flex items-center font-semibold">
                         <ImMusic size="17"/>
-                        <span className="px-1"> AWESOME</span>
+                        <span className="px-1"> future of tech</span>
                         <AiFillHeart size="20"/>
                     </p>
 
