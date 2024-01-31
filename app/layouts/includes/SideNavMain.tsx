@@ -20,12 +20,13 @@ export default function SideNavMain() {
             <div 
                 id="SideNavMain" 
                 className={`
-                    fixed z-20 bg-white pt-[70px] h-full lg:border-r-0 border-r w-[75px] overflow-auto
-                    ${pathname === '/' ? 'lg:w-[310px]' : 'lg:w-[220px]'}
+                fixed z-20 bg-white pt-[70px] h-full lg:border-r-0 border-r w-[75px] overflow-auto
+        ${pathname === '/' ? 'lg:w-[310px]' : 'lg:w-[220px]'}
+        lg:hidden  hidden class for small screens'}
                 `}
             >
                 
-                <div className="lg:w-full w-[55px] mx-auto">
+                <div className="lg:w-full w-[55px] mx-auto flex flex-col lg:flex-row items-start lg:items-end">
                     <Link href="/">
                         <MenuItem 
                             iconString="For You" 

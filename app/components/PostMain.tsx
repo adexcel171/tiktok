@@ -31,7 +31,7 @@ export default function PostMain({ post }: PostMainCompTypes) {
                     <img className="rounded-full max-h-[60px]" width="60" src={useCreateBucketUrl(post?.profile?.image)} />
                 </div>
 
-                <div className="pl-3 w-full px-4">
+                <div className="w-full px-2">
                     <div className="flex items-center justify-between pb-0.5">
                         <Link href={`/profile/${post.profile.user_id}`}>
                             <span className="font-bold hover:underline cursor-pointer">
