@@ -44,11 +44,11 @@ export default function TopNav() {
 
     return (
         <>
-            <div id="TopNav" className="fixed bg-white z-30 flex items-center w-full border-b h-[60px]">
+            <div id="TopNav" className="fixed bg-white z-30 flex items-center w-full border-b h-[70px]">
                 <div className={`flex items-center justify-between gap-6 w-full px-4 mx-auto ${pathname === '/' ? 'max-w-[1150px]' : ''}`}>
 
                     <Link href="/">
-                        <img className="min-w-[70px] w-[50px] h-[40]" src="/images/logo.svg"/>
+                        <img className="min-w-[60px] w-[50px]" src="/images/logo.svg"/>
                     </Link>
 
                     <div className="relative hidden md:flex items-center justify-end bg-[#F1F1F2] p-1 rounded-full max-w-[430px] w-full">

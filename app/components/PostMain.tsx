@@ -10,6 +10,7 @@ import { PostMainCompTypes } from "../types"
 
 export default function PostMain({ post }: PostMainCompTypes) {
 
+   
     useEffect(() => {
         const video = document.getElementById(`video-${post?.id}`) as HTMLVideoElement
         const postMainElement = document.getElementById(`PostMain-${post.id}`);
@@ -32,7 +33,7 @@ export default function PostMain({ post }: PostMainCompTypes) {
                 </div>
 
                 <div className="w-full px-2">
-                    <div className="flex items-center justify-between pb-0.5">
+                    <div className="flex items-center justify-between px-2 pb-0.5">
                         <Link href={`/profile/${post.profile.user_id}`}>
                             <span className="font-bold hover:underline cursor-pointer">
                                 {post.profile.name}
@@ -40,7 +41,7 @@ export default function PostMain({ post }: PostMainCompTypes) {
                         </Link>
 
                         <button className="border text-[15px] px-[21px] py-0.5 border-[#F02C56] text-[#F02C56] hover:bg-[#ffeef2] font-semibold rounded-md">
-                            Follow
+                            Following
                         </button>
                     </div>
                     <p className="text-[15px] pb-0.5 break-words md:max-w-[400px] max-w-[300px]">{post.text}</p>
