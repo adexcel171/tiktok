@@ -25,7 +25,7 @@ export default function PostMain({ post }: PostMainCompTypes) {
 
     return (
         <>
-            <div id={`PostMain-${post.id}`} className="flex border-b py-6">
+            <div id={`PostMain-${post.id}`} className="flex border-b py-5">
 
                 <div className="cursor-pointer">
                     <img className="rounded-full max-h-[60px]" width="60" src={useCreateBucketUrl(post?.profile?.image)} />
@@ -46,8 +46,8 @@ export default function PostMain({ post }: PostMainCompTypes) {
                     <p className="text-[15px] pb-0.5 break-words md:max-w-[400px] max-w-[300px]">{post.text}</p>
                     <p className="text-[14px] text-gray-500 pb-0.5">#fun #tech #SuperAwesome</p>
                     <p className="text-[14px] pb-0.5 flex items-center font-semibold">
-                        <ImMusic size="17"/>
-                        <span className="px-1"> future of tech</span>
+                        {/* <ImMusic size="17"/> */}
+                        <span className="px-1"> excel tech</span>
                         <AiFillHeart size="20"/>
                     </p>
 
@@ -66,7 +66,7 @@ export default function PostMain({ post }: PostMainCompTypes) {
                             <img 
                                 className="absolute right-2 bottom-10" 
                                 width="25" 
-                                src="/images/admire.jpg"
+                                src="/images/logo.svg"
                             />
                         </div>
                         
