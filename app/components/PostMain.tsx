@@ -61,7 +61,7 @@ export default function PostMain({ post }: PostMainCompTypes) {
                                 loop
                                 controls
                                 muted
-                                className="rounded-xl sm:w-[100%] object-cover mx-auto h-full" 
+                                className="rounded-xl w-[100%] object-cover h-full" 
                                 src={useCreateBucketUrl(post?.video_url)}
                             />
                             <img 
