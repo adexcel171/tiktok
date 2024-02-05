@@ -97,7 +97,7 @@ export default function PostMainLikes({ post }: PostMainLikesCompTypes) {
                             className="rounded-full bg-gray-200 p-2 cursor-pointer"
                         >
                             {!hasClickedLike ? (
-                                <AiFillHeart color={likes?.length > 0 && userLiked ? '#ff2626' : ''} size="18"/>
+                                <AiFillHeart color={likes?.length > 0 && userLiked ? '#ff2626' : ''} size=""/>
                             ) : (
                                 <BiLoaderCircle className="animate-spin" size="20"/>
                             )}

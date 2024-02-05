@@ -52,9 +52,9 @@ export default function PostMain({ post }: PostMainCompTypes) {
                         <AiFillHeart size="20"/>
                     </p>
 
-                    <div className="mt-2.5 flex">
+                    <div className="mt-2.5 w-[100%] flex">
                         <div
-                            className="relative min-h-[500px] max-h-[500px] max-w-[600px] sm:max-w-[600px] flex items-center bg-black rounded-xl cursor-pointer"
+                            className="relative min-h-[500px] max-h-[500px] max-w-[700px] sm:max-w-[700px] flex items-center bg-black rounded-xl cursor-pointer"
                         >
                             <video 
                                 id={`video-${post.id}`}
