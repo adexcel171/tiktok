@@ -62,7 +62,7 @@ export default function Post({ params }: PostPageTypes) {
                     <div >
                         <button 
                             onClick={() => loopThroughPostsUp()}
-                            className="absolute z-20 right-4 top-4 flex items-center justify-center rounded-full bg-gray-700 p-1.5 hover:bg-gray-800"
+                            className="absolute z-20 right-4 top-6 flex items-center justify-center rounded-full bg-gray-700 p-1.5 hover:bg-gray-800"
                         >
                             <BiChevronUp size="30" color="#FFFFFF"/>
                         </button>
@@ -78,7 +78,7 @@ export default function Post({ params }: PostPageTypes) {
                     <img 
                         className="absolute z-20 top-[18px] left-[70px] rounded-full lg:mx-0 mx-auto" 
                         width="45" 
-                        src="/images/tiktok-logo-small.png"
+                        src="/images/logo.svg"
                     />
 
                     <ClientOnly>
