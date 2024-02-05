@@ -97,9 +97,9 @@ export default function PostMainLikes({ post }: PostMainLikesCompTypes) {
                             className="rounded-full bg-gray-200 p-2 cursor-pointer"
                         >
                             {!hasClickedLike ? (
-                                <AiFillHeart color={likes?.length > 0 && userLiked ? '#ff2626' : ''} size="25"/>
+                                <AiFillHeart color={likes?.length > 0 && userLiked ? '#ff2626' : ''} size="18"/>
                             ) : (
-                                <BiLoaderCircle className="animate-spin" size="25"/>
+                                <BiLoaderCircle className="animate-spin" size="20"/>
                             )}
                             
                         </button>
@@ -113,14 +113,14 @@ export default function PostMainLikes({ post }: PostMainLikesCompTypes) {
                         className="pb-4 text-center"
                     >
                         <div className="rounded-full bg-gray-200 p-2 cursor-pointer">
-                            <FaCommentDots size="25"/>
+                            <FaCommentDots size="18"/>
                         </div>
                         <span className="text-xs text-gray-800 font-semibold">{comments?.length}</span>
                     </button>
 
                     <button className="text-center">
                         <div className="rounded-full bg-gray-200 p-2 cursor-pointer">
-                            <FaShare size="25"/>
+                            <FaShare size="18"/>
                         </div>
                         <span className="text-xs text-gray-800 font-semibold">0</span>
                     </button>
