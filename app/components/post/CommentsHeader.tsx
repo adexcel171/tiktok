@@ -148,8 +148,8 @@ export default function CommentsHeader({ post, params }: CommentsHeaderCompTypes
             <p className="px-8 mt-4 text-sm">{post?.text}</p>
 
             <p className="flex item-center gap-2 px-8 mt-4 text-sm font-bold">
-                <ImMusic size="17"/>
-                original sound - {post?.profile.name}
+                {/* <ImMusic size="17"/> */}
+                Post by - {post?.profile.name}
             </p>
 
             <div className="flex items-center px-8 mt-8">

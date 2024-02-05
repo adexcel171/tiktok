@@ -56,13 +56,13 @@ export default function Post({ params }: PostPageTypes) {
                         href={`/profile/${params?.userId}`}
                         className="absolute text-white z-20 m-5 rounded-full bg-gray-700 p-1.5 hover:bg-gray-800"
                     >
-                        <AiOutlineClose size="27"/>
+                        <AiOutlineClose size="25"/>
                     </Link>
 
                     <div >
                         <button 
                             onClick={() => loopThroughPostsUp()}
-                            className="absolute z-20 right-4 top-6 flex items-center justify-center rounded-full bg-gray-700 p-1.5 hover:bg-gray-800"
+                            className="absolute z-20 right-4 top-8 flex items-center justify-center rounded-full bg-gray-700 p-1.5 hover:bg-gray-800"
                         >
                             <BiChevronUp size="30" color="#FFFFFF"/>
                         </button>
