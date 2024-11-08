@@ -1,18 +1,20 @@
-"use client"
+"use client";
 
-import { useEffect } from "react"
-import MainLayout from "./layouts/MainLayout"
-import { usePostStore } from "@/app/stores/post"
-import ClientOnly from "./components/ClientOnly"
-import PostMain from "./components/PostMain"
+import { useEffect } from "react";
+import MainLayout from "./layouts/MainLayout";
+import { usePostStore } from "@/app/stores/post";
+import ClientOnly from "./components/ClientOnly";
+import PostMain from "./components/PostMain";
 
 export default function Home() {
   let { allPosts, setAllPosts } = usePostStore();
-  useEffect(() => { setAllPosts()}, [])
+  useEffect(() => {
+    setAllPosts();
+  }, []);
   return (
     <>
       <MainLayout>
-        <div className="mt-[80px]  w-[100%] max-w-[690px] ml-auto">
+        <div className="mt-[80px] w-[100%] flex justify-center">
           <ClientOnly>
             {allPosts.map((post, index) => (
               <PostMain post={post} key={index} />
@@ -21,6 +23,5 @@ export default function Home() {
         </div>
       </MainLayout>
     </>
-  )
+  );
 }
-
